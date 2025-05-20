@@ -104,12 +104,22 @@ def main():
             word, meaning = words[i]
             print(f"\n{YELLOW}Current word: {word}{RESET}")
 
+            bypass = False
+
             while True:
-                user_input: str = input("Enter: Show meaning, n: Next word, q: Quit\n").lower()
+                if not bypass:
+                    user_input: str = input("Enter: Show meaning, n: Next word, q: Quit\n").lower()
+                else:
+                    user_input: str = input()
+                    bypass = False
 
                 if user_input == '':
                     print(f"{BLUE}Meaning: {meaning}{RESET}")
                     break;
+                elif user_input == '.':
+                    print('Revelaling ... ');
+                    print(f"{BLUE}Meaning: {meaning}{RESET}")
+                    bypass = True
                 elif user_input == 'n':
                     score = score + 1
                     break;
