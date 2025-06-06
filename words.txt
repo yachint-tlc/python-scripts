@@ -654,3 +654,4 @@ Ponderous: weighed-down; moving-slowly
 Choleric: prone to outbursts of temper; easily angered
 Saturnine: morose or gloomy
 Expunge: to eliminate completely
+Astroturfing: to mimic/ generate fake support/opinions about something
